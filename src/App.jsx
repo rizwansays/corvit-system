@@ -27,7 +27,7 @@ function App() {
     <>
     <Routes>
       <Route path='/' element ={<Navigate to='home' />} />
-      <Route path='corvit' element={<Home/>} />
+      <Route path='corvit-system' element={<Home/>} />
       <Route path='home' element={<Home />} />
       <Route path='about-us' element={<About />} />
       {/* <Route path='courses' element={<Courses />} /> */}
