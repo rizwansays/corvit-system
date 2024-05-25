@@ -63,12 +63,12 @@ export default function Home() {
     <>
       <section className="section md:h-[90vh] relative group">
         <Carousele autoSlide={true} autoSlideInt={9000}>
-          {[
-            <video src={video2} autoPlay muted loop className="object-cover" />,
-            ...slide.map((s, i) => (
+          {
+            // <video src={video2} autoPlay muted loop className="object-cover" />,
+            slide.map((s, i) => (
               <img className="w-[100%] object-cover " src={s} key={i} alt="" />
-            )),
-          ]}
+            ))
+          }
         </Carousele>
 
         {/* <div className=' absolute  top-40 md:top-[50%] -translate-x-0 translate-y-[-50%]  lg:left-20  flex flex-col justify-center md:flex-row flex-wrap px-10 '>
