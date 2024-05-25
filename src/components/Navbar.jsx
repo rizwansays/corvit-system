@@ -21,10 +21,10 @@ export default function Navbar() {
     });
   };
 
-  // useEffect(() => {
-  //   stickyHeader();
-  //   return () => window.removeEventListener("scroll", stickyHeader);
-  // });
+  useEffect(() => {
+    stickyHeader();
+    return () => window.removeEventListener("scroll", stickyHeader);
+  });
   return (
     <div>
       <nav
