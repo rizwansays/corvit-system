@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row } from 'reactstrap'
 import Network from '../assets/img/network.jpg'
 import Accounting from '../assets/img/accounting.jpg'
-import Frontend from '../assets/img/front.jpeg'
+import Frontend from '../assets/img/free.jpeg'
 import Android from '../assets/img/mobile.webp'
 import BgCyber from '../assets/img/bg-cyber.png'
 import { motion } from "framer-motion";
@@ -45,9 +45,9 @@ export default function LatestOffers() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className='border border-red-600 w-[350px] md:w-[360px] lg:w-[430px] rounded-lg shadow-xl bg-white mx-2'>
-              <div><img className='w-full h-60 rounded-t-lg object-cover ' src={Network} alt="" /></div>
+              <div><img className='w-full h-60 rounded-t-lg object-center ' src={Frontend} alt="" /></div>
               <div className='py-4 px-6 '>
-                <h1 className='text-lg font-semibold pb-2'>Free Microsoft Azure With CCNA</h1>
+                <h1 className='text-lg font-semibold pb-2'>Free Machine Learning Course</h1>
                 <p className='pb-3 text-sm'>CCNA is an information technology certification from Cisco Systems. CCNA certification is an associate-level Cisco Career certification. The Cisco exams have changed several times in response to changing IT trends.</p>
                 <hr />
                 <div className='flex justify-between items-center flex-wrap'>
@@ -62,9 +62,9 @@ export default function LatestOffers() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className='border border-red-600 w-[350px] md:w-[360px] lg:w-[430px]   rounded-lg shadow-xl bg-white '>
-              <div><img className='w-full h-60 rounded-t-lg object-cover' src={Accounting} alt="" /></div>
+              <div><img className='w-full h-60 rounded-t-lg object-center' src={Frontend} alt="" /></div>
               <div className='py-4 px-6'>
-                <h1 className='text-lg font-semibold pb-2'>Computerized Accounting</h1>
+                <h1 className='text-lg font-semibold pb-2'>Free Cyber Security Course</h1>
                 <p className='pb-3 text-sm'>In this project based course you will learn to develop interactive and responsive websites and front-end web development of a enterprise application. It includes HTML5 and CSS3 for creating beautiful web pages
                 <br /></p>
                 <hr />
