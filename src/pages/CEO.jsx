@@ -7,7 +7,7 @@ import { fadeIn } from "../variants";
 export default function CEO() {
   const vec = vector
   return (
-    <section className='mt-10 mb-10 md:mb-0'>
+    <section className='mt-10 mb-10 md:mb-0 overflow-hidden'>
         <div className='flex items-center justify-around  flex-wrap mx-10'>
         <div>
             <div className=''><motion.img 

@@ -3,7 +3,7 @@ import { Container, Row } from "reactstrap";
 import React from "react";
 import WhatsAppLogo from "../assets/img/WhatsApp.svg.webp";
 // import img1 from '../assets/img/1.jpeg'
-// import img2 from '../assets/img/2.jpeg'
+// import img2 from '../assets/img/2.2jpg'
 // import img3 from '../assets/img/3.png'
 // import video from '../assets/img/clip.webp'
 import img1 from "../assets/img/1.1.jpg";
@@ -61,12 +61,12 @@ export default function Home() {
 
   return (
     <>
-      <section className="section md:h-[90vh] relative group">
+      <section className="section relative group">
         <Carousele autoSlide={true} autoSlideInt={9000}>
           {
             // <video src={video2} autoPlay muted loop className="object-cover" />,
             slide.map((s, i) => (
-              <img className="w-[100%] object-cover " src={s} key={i} alt="" />
+              <img className="w-[100%] object-center " src={s} key={i} alt="" />
             ))
           }
         </Carousele>
@@ -95,16 +95,16 @@ export default function Home() {
       </div> */}
       </section>
 
-      <section className="-mt-56 md:mt-20">
+      <section className="-mt-96 sm:-mt-20 md:mt-0">
         <Container>
-          <Row className="md:w-1/2 mx-auto">
+          <Row className="lg:w-1/2 mx-auto">
             <div className="text-center flex flex-col justify-center flex-wrap">
               <h1
                 // variants={fadeIn("up", 0.3)}
                 // initial="hidden"
                 // whileInView={"show"}
                 // viewport={{ once: false, amount: 0.3 }}
-                className="text-2xl text-red-600 font-semibold py-3"
+                className="text-2xl text-red-600 font-semibold py-3 "
               >
                 Benefits Of Learning With Corvit
               </h1>
@@ -113,7 +113,7 @@ export default function Home() {
                 // initial="hidden"
                 // whileInView={"show"}
                 // viewport={{ once: false, amount: 0.3 }}
-                className="pb-5"
+                className="pb-5 px-3"
               >
                 The vision got wider when Corvit started to expand its roots in
                 different cities of Pakistan like Bahawalpur, Lahore, Islamabad,
@@ -192,14 +192,14 @@ export default function Home() {
       <OurClientsM />
       {scrollTop && (
         <div
-          className="fixed right-3 bottom-0 bg-red-500 cursor-pointer p-2 text-white text-lg rounded-full animate-bounce"
+          className="fixed right-7 md:right-3 bottom-2 md:bottom-0 bg-red-500 cursor-pointer p-2 text-white text-lg rounded-full animate-bounce"
           onClick={() => scrollToTop(toTop)}
         >
           <FaArrowUp />
         </div>
       )}
 
-      <div class="fixed z-50 bottom-9 right-0 p-3 flex justify-center items-center">
+      <div class="fixed z-50 bottom-10 md:bottom-9 right-3 md:right-0 p-3 flex justify-center items-center">
         <span className="hidden md:block cursor-pointer bg-white p-[6px] text-[12px] rounded-md">
           Need Help? <span className="font-semibold">Chat with us</span>
         </span>

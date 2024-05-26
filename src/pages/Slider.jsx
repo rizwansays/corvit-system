@@ -1,15 +1,10 @@
 import React from 'react'
-import Network from '../assets/img/network.jpg'
-import BgCyber from '../assets/img/bg3.jpg'
-import Cyber from '../assets/img/cyber.jpg'
-import Digital from '../assets/img/digital.jpg'
-import Frontend from '../assets/img/front.jpeg'
-import Android from '../assets/img/mobile.webp'
-// import HeroSlider, {Slide} from 'hero-slider'
-import HeroSlider from 'hero-slider'
+import img1 from "../assets/img/1.1.jpg";
+import img2 from "../assets/img/2.2.jpg";
+import img3 from "../assets/img/3.3.jpg";
+import HeroSlider, {Slide} from 'hero-slider'
 export default function Slider() {
   return (
-    <>
     <HeroSlider 
     slidingAnimation= 'left_to_right'
     orientation="horizontal"
@@ -17,9 +12,7 @@ export default function Slider() {
     onBeforeChange={(previousSlide, nextSlide) => console.log('onBeforeChange', previousSlide, nextSlide)}
     onChange={nextSlide => console.log('onChange', nextSlide)}
     onAfterChange={nextSlide => console.log('onAfterChange', nextSlide)}
-    style={{
-      backgroundColor: "rgba(0,0,0,0.33)"
-    }}
+    
 
     settings={{
       slidingDuration: 250,
@@ -30,12 +23,13 @@ export default function Slider() {
       height: '100vh'
     }}
     >
-      <Slide background={{backgroundImage: Network, backgroundAttachment: 'fixed'}} />
+      <Slide><img src={img1} alt="" /></Slide>
+      <Slide><img src={img2} alt="" /></Slide>
+      <Slide><img src={img3} alt="" /></Slide>
 
-      <Slide background={{backgroundImage: BgCyber, backgroundAttachment: 'fixed'}} />
+      {/* <Slide background={{backgroundImage: BgCyber, }} /> */}
 
     </HeroSlider>
-    {/* <img src={Network} alt="" /> */}
-    </>
+  
   )
 }

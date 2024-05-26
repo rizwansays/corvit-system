@@ -124,11 +124,11 @@ export default function NavLinks() {
                   </div>
                   <div className="bg-slate-800 p-3.5 z-50 ">
                     {link.sublinks.map((mysublinks, i) => (
-                      <div>
+                      <div key={i}>
                         {/* <h1 className="text-red-600">{mysublinks.Head}</h1> */}
-                        {mysublinks.sublink.map((slink) => (
-                          <li className="text-sm text-white my-2.5  hover:text-red-600 hover:bg-black/70 z-50  p-1.5 ">
-                            <NavLink to={slink.path} key={i} className={(navClass) => (navClass.isActive ? "nav__active " : "")}>
+                        {mysublinks.sublink.map((slink, i) => (
+                          <li className="text-sm text-white my-2.5  hover:text-red-600 hover:bg-black/70 z-50  p-1.5 " key={i}>
+                            <NavLink to={slink.path}  className={(navClass) => (navClass.isActive ? "nav__active " : "")}>
                               {slink.name}
                             </NavLink>
                           </li>
