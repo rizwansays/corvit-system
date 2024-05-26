@@ -12,9 +12,9 @@ export default function LatestOffers() {
   return (
     <>
     <section style={{backgroundImage: `url(${bgCyber})`}} className='relative mt-20 bg-cyber w-full h-full py-14 bg-no-repeat bg-cover overflow-hidden'>
-      <Container>
+      <Container >
         <Row>
-          <div className='w-full mx-auto'>
+          <div className='w-full mx-auto text-center'>
             <motion.h1 
             variants={fadeIn("up", 0.3)}
             initial="hidden"

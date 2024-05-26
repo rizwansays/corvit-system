@@ -61,50 +61,18 @@ export default function Home() {
 
   return (
     <>
-      <section className="section relative group">
-        <Carousele autoSlide={true} autoSlideInt={9000}>
-          {
-            // <video src={video2} autoPlay muted loop className="object-cover" />,
-            slide.map((s, i) => (
-              <img className="w-[100%] object-center " src={s} key={i} alt="" />
-            ))
-          }
-        </Carousele>
+      <Slider />
 
-        {/* <div className=' absolute  top-40 md:top-[50%] -translate-x-0 translate-y-[-50%]  lg:left-20  flex flex-col justify-center md:flex-row flex-wrap px-10 '>
-        <div className=' '>
-          <h1
-          //  variants={fadeIn("up", 0.4)}
-          //  initial="hidden"
-          //  whileInView={"show"}
-          //  viewport={{ once: false, amount: 0.3 }}
-          className='lg:w-[50%] text-white text-[20px] md:text-4xl font-medium leading-snug mb-5'>Corvit Systems - Best IT Training Institute in <span className='text-red-600 font-bold'>Bahawalpur</span> </h1>
-          <p 
-          // variants={fadeIn("up", 0.5)}
-          // initial="hidden"
-          // whileInView={"show"}
-          // viewport={{ once: false, amount: 0.3 }}
-          className='lg:w-[70%]  text-white text-[13px] md:text-[17px] '>For the last 23 years, the acronym “Corvit” has commanded veneration not only in Pakistan the perfectionist in Computer Network Education but also throughout the subcontinent. <span className='hidden md:flex'>Our aim is to highlight the inner potential of students in order to develop there competitive character needed to face the professional world.</span></p>
-          <button
-          // variants={fadeIn("up", 0.6)}
-          // initial="hidden"
-          // whileInView={"show"}
-          // viewport={{ once: false, amount: 0.3 }}
-          className='text-white bg-red-600 py-2 px-3 md:py-3 md:px-5 rounded-full mt-3  md:mt-5 '>Apply Now</button>
-        </div>
-      </div> */}
-      </section>
-
-      <section className="-mt-96 sm:-mt-20 md:mt-0">
+      <section className=" mt-10 flex justify-center items-center w-full">
         <Container>
-          <Row className="lg:w-1/2 mx-auto">
-            <div className="text-center flex flex-col justify-center flex-wrap">
+          <Row className=" ">
+            <div className="w-full text-center flex flex-col justify-center flex-wrap">
               <h1
                 // variants={fadeIn("up", 0.3)}
                 // initial="hidden"
                 // whileInView={"show"}
                 // viewport={{ once: false, amount: 0.3 }}
-                className="text-2xl text-red-600 font-semibold py-3 "
+                className=" text-2xl text-red-600 font-semibold py-3 text-center"
               >
                 Benefits Of Learning With Corvit
               </h1>
@@ -113,7 +81,7 @@ export default function Home() {
                 // initial="hidden"
                 // whileInView={"show"}
                 // viewport={{ once: false, amount: 0.3 }}
-                className="pb-5 px-3"
+                className="pb-5 lg:px-52 px-3"
               >
                 The vision got wider when Corvit started to expand its roots in
                 different cities of Pakistan like Bahawalpur, Lahore, Islamabad,
@@ -182,7 +150,7 @@ export default function Home() {
       </section>
 
       {/* <HomeMain /> */}
-      {/* <Slider /> */}
+     
       <LatestOffers />
       <CEO />
       <OurCourses />
